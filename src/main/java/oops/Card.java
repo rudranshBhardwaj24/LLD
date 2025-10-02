@@ -1,8 +1,10 @@
 package oops;
 
-public class Card {
+public class Card implements PaymentMethod{
     private String cardNumber;
     private String cardHolderName;
+
+    public void pay(){}
 
     public Card(String cardNumber, String cardHolderName) {
         this.cardNumber = cardNumber;
